@@ -1,0 +1,311 @@
+ 
+@font-face{
+    font-family: caribbeanIsland;
+    src: url(fuente/caribbeanIsland.ttf);
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-image: url(img/bannerPirata.png) ;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 20px 15px 0 rgb(0 0 0 / 32%);
+}
+
+.vector{
+    margin: 10px 0 0 20px;
+}
+.one{
+    float: right;
+    margin: 5px 20px;
+}
+
+#titulo{
+    font-size: 50px;
+    font-style: oblique;
+    width: 450px;
+    font-family: caribbeanIsland;
+}
+.limpiarinput1{
+    font-size: 40px;
+    height: 40px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 65PX;
+    background: #cfcece;
+    font-family: caribbeanIsland;
+}
+body{
+    
+    /*background-image: url(img/ahorcados1.jpg); 
+    background-repeat: no-repeat; */
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover; 
+    background-position: center;
+}
+
+.contenedor{
+    padding: 12px 0px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;   
+}
+
+.limpiarinput1 {
+    height: 70px;
+    width: 350px;
+    text-align: center;
+}
+.contenedorBotones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.contenedorLetra {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px;
+}
+
+.ultimoIngreso{
+    margin: 10px;
+    font-size: 28px;
+    font-family: caribbeanIsland;
+    
+}
+.btnNuevoJuego, .btnRendirse, .btnReglas{
+    font-size: 22px;
+    margin: 10px;
+    border-radius: 20px;
+    background: #5D4157;
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-family: caribbeanIsland;
+    
+}
+.btnRendirse:hover{
+    background: rgb(107, 1, 1);
+    transform: scale(1.0);
+    color: #E5E5E5;
+    
+}
+.btnNuevoJuego:hover{
+    background: #002858;
+    transform: scale(1.0);
+    color: #E5E5E5;
+}
+
+
+.guiones{
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: caribbeanIsland;
+}
+.contenedorHorcaMensaje {
+    display: flex;
+     
+}
+
+ 
+.imgHorcado {
+    display: flex;
+}
+.contenedor-left {
+    font-size: 20px;
+    color: rgb(107, 1, 1);
+    float:left;
+    width: 40%;
+    height: 0px;
+}
+.mensaje {
+    color: rgb(141, 0, 0);
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+    left: 40px;
+    font-family: caribbeanIsland;
+}
+.letrasTodas {
+    position: relative;
+    top: 15px;
+    left: 40px;
+    font-family: caribbeanIsland;
+}
+.contenedorRight {
+    font-size: 20px;
+    color: aqua;
+    float: right;
+    width: 70%;
+    position: relative;
+    left: 150px;
+}
+/* Primer Página */
+ 
+.primerPagina{
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: url(img/fondoTrio.jpg);
+    background-repeat: no-repeat;
+    /*background-position: */
+     
+}
+ 
+.botonesPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 430px;
+     
+}
+.ola{
+    display: flex;
+    margin-top: 100px;
+ 
+}
+footer{
+    background: rgb(110, 110, 110);
+    padding: 5px 0px 0px 0px;
+    overflow: hidden; 
+}
+.contenedor-footer{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.content-foo{
+    text-align: center;
+    margin: 20px;
+}
+
+.titulo-final{
+    text-align: center;
+}
+
+
+@media screen and (max-width:850px){
+    #titulo {
+        font-size: 27px;
+    }
+    .contenedor-left {
+        width: 20%;
+        color: rgb(141, 0, 0);
+    }
+  
+    .contenedorHorcaMensaje{
+        justify-content: center;
+        flex-direction: column;
+         
+    }
+    .contenedor-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .letrasTodas {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .mensaje {
+        color: rgb(141, 0, 0);
+        font-size: 45px;
+        position: relative;
+        top: -55px;
+        left: 0px;
+    }
+    .ultimoIngreso {
+        font-size: 23px;
+    }
+    .contenedorRight {
+        display: flex;
+        left: 0px;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+    .contenedorRight img {
+        width: 45%;
+        margin: 25px;
+        margin-top: 90px;
+    }
+    .limpiarinput1 {
+    width: 200PX;
+    font-size: 22px;
+    }
+    .guiones{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:500px){
+    #titulo {
+        font-size: 22px;
+    }
+    .contenedorLetra{
+
+    display: flex;
+    
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    }
+    .limpiarinput1{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .ultimoIngreso {
+        font-size: 13px;
+    }
+    .guiones {
+        font-size: 30px;
+        width: 100%;
+    }
+    .contenedorRight img { 
+        margin-top: 90px;
+        width: 60%;
+    }
+    .vector{
+        margin: 10px 0 0 10px;
+    }
+    .one{
+        float: right;
+        margin: 5px 5px;
+    }
+    .reglas{
+        width: 80%;
+        font-size: 20px;
+        justify-content: none;
+        text-align: none;
+        margin: auto;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:328px){
+    .mensaje {
+        font-size: 25px;
+    }
+}

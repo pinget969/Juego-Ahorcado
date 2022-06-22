@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <header class="box-header">
+        <img class="vector" src="img/Vector.png" alt="">
+        <img class="one" src="img/oneLogo.png" alt="">
+        
+    </header>
+    <section class="contenedor">
+        
+        <h1 id="titulo" class="titulo">Ingrese una letra:</h1>
+        <div class="contenedorLetra">
+            <input type="text" maxlength="1" id="letraIngresada" class="limpiarinput1">
+            <p id="input-text" class="ultimoIngreso">Recuerda, ¡Tienes 9 intentos fallidos!</p>
+        </div>
+
+        <div class="contenedorHorcaMensaje">
+            <div class="contenedor-left">
+                
+                <p id="LetrasFalladas" class="letrasTodas"><br></p>
+                <p id="message" class="mensaje"></p>
+            </div>
+            <div class="contenedorRight">
+                <img src="img/ahorcado1.png" alt="" id="horca" class="imgHorcado">
+            </div>
+        </div>
+        <div>
+            <h1 id="guion2" class="guiones">_</h2>
+        </div>
+        <div class="contenedorBotones">
+            <button type="button" id="btn-jugar" class="btnNuevoJuego" onclick="nuevoJuego(this)">Nueva palabra</button>
+            <button type="button" id="btn-comprobar" class="btnRendirse" onclick="salir(this)">Rendirse</button>
+        </div>
+    </section>
+    <script src="ahorcado.js"></script>
+    
+</body>
+
+</html>
