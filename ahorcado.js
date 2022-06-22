@@ -19,7 +19,7 @@ function newWord() {
 }
 
 function justStart() {
-    location.href = "index.html";
+    location.href = "principal.html";
 }
 
 // Agregar palabra nueva
@@ -45,10 +45,9 @@ function adionarPalabra() {
     localStorage.setItem("nombre", texto);
     const verLocal = localStorage.getItem("nombre");
     localStorage.setItem("nombre", captura);
-    location.href = "index.html";
+    location.href = "principal.html";
 }
 const verLocal = localStorage.getItem("nombre");
-console.log(verLocal);
 ///// FIN Agregando palabra desde otro html.
 
 var input = document.getElementById("letraIngresada");
@@ -57,17 +56,17 @@ input.addEventListener("keyup", textModified);
 
 
 //LISTA DE PALABRAS DISPONIBLES 
-var ListaPalabras = ["CABALLO", "SISTEMA", "ALFOMBRA", "ALCACHOFA", "BOOTCAMP"]; // Dificultad media
+var ListaPalabras = ["CABALLO", "SPARROW", "PERLA", "ALCACHOFA", "BOOTCAMP"]; // Dificultad media
  
 
 if(verLocal !=null && (/^[A-Z_ ]+$/.test(verLocal) && verLocal.length > 2) && !verLocal.includes(" ")){
     ListaPalabras.push(verLocal);
 }
 
-console.log(ListaPalabras);
+// console.log(ListaPalabras);
 var numero = Math.floor(Math.random() * 6);
-console.log(numero);
-console.log(ListaPalabras[numero]);
+//console.log(numero);
+//console.log(ListaPalabras[numero]);
 
 var uno = ""
 var nombre = ListaPalabras[numero]
@@ -79,7 +78,7 @@ function guion() {
         lista.push("_");
 
     }
-    console.log(lista);
+    //console.log(lista);
     var lista1 = lista.join(" ");
     document.getElementById("guion2").innerHTML = lista1;
 
@@ -105,7 +104,7 @@ function textModified() {
         for (var i = 0; i < nombre.length; i++) {
             if (uno == nombre[i]) {
                 miArray.splice(i, 0, uno);
-                console.log(miArray);
+ //               console.log(miArray);
                 LetraEnGuion(uno);
             }
         }
@@ -124,7 +123,7 @@ function textModified() {
         //
         intentosFallados();
         palabraFallada(LetrasUsuario);
-        console.log(LetrasUsuario);
+       // console.log(LetrasUsuario);
         cambioImagen();
         limpiar();
         return false;
@@ -136,7 +135,7 @@ function textModified() {
 
 function cambioImagen() {
     limpiar();
-    console.log(contador);
+ //   console.log(contador);
     if ((LetrasUsuario.length - contador) == 0) {
         element = "img/ahorcado1.png";
     }
@@ -178,7 +177,7 @@ function nuevoJuego() {
 }
 // Rendirse
 function salir() {
-    location.href = "principal.html";
+    location.href = "index.html";
 }
 // Validar repetidas
 function validarRepetidas(LetrasUsuario, uno) {
@@ -207,7 +206,7 @@ function LetraEnGuion(uno) {
     for (var i = 0; i < nombre.length; i++) {
         if (uno == nombre[i]) {
             lista.splice(i, 1, uno);
-            console.log(lista);
+           // console.log(lista);
             var lista1 = lista.join(" ");
             document.getElementById("guion2").innerHTML = lista1;
         }
