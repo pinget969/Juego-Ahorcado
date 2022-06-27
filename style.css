@@ -89,8 +89,8 @@ body{
     border-radius: 20px;
     background: #5D4157;
     background: #403B4A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #E7E9BB, #746d81);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #feffe8, #7a7781); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     color: black;
     padding: 10px;
@@ -174,7 +174,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 430px;
+    margin-top: 410px;
+    position: sticky;
+    width: 100%;
+    top: 70%;
+    text-align:center; 
+    
      
 }
 .ola{
@@ -261,7 +266,9 @@ footer{
     .guiones{
         font-size: 50px;
     }
-    
+    .body-principal{
+        height: none;
+    }
 }
 @media screen and (max-width:500px){
     #titulo {
@@ -307,6 +314,12 @@ footer{
     }
     .contenedor-footer{
         flex-direction: column;
+    }
+    .botonesPrincipal{
+        top: 60%;
+    }
+    .body-principal{
+        height: 100vh;
     }
 
 }
