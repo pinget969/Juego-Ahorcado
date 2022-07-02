@@ -37,7 +37,7 @@ header{
     background: #cfcece;
     font-family: caribbeanIsland;
 }
-body{
+.body-principal{
     
     /*background-image: url(img/ahorcados1.jpg); 
     background-repeat: no-repeat; */
@@ -48,6 +48,7 @@ body{
     background-size: cover; 
     
     background-position: center;
+     
 }
 
 
@@ -205,9 +206,7 @@ footer{
 .titulo-final{
     text-align: center;
 }
-.body-principal{
-    height: 100vh;
-}
+ 
 
 
 @media screen and (max-width:850px){
@@ -266,9 +265,6 @@ footer{
     .guiones{
         font-size: 50px;
     }
-    .body-principal{
-        height: none;
-    }
 }
 @media screen and (max-width:500px){
     #titulo {
@@ -318,10 +314,6 @@ footer{
     .botonesPrincipal{
         top: 60%;
     }
-    .body-principal{
-        height: 100vh;
-    }
-
 }
 
 @media screen and (max-width:328px){

@@ -16,6 +16,7 @@ function btnRegla() {
 function newWord() {
     validarPalabra();
     adionarPalabra();
+  
 }
 
 function justStart() {
@@ -38,7 +39,7 @@ function validarPalabra() {
           });
     }
 }
-
+ 
 //Agregando palabra desde otro html.
 function adionarPalabra() {
     const texto = document.getElementById("inputPalabraExtra").value;
@@ -64,7 +65,7 @@ if(verLocal !=null && (/^[A-Z_ ]+$/.test(verLocal) && verLocal.length > 2) && !v
 }
 
 // console.log(ListaPalabras);
-var numero = Math.floor(Math.random() * 6);
+var numero = Math.floor(Math.random() * ListaPalabras.length);
 //console.log(numero);
 //console.log(ListaPalabras[numero]);
 
