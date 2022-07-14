@@ -28,7 +28,7 @@ header{
     font-family: caribbeanIsland;
 }
 .limpiarinput1{
-    font-size: 40px;
+    font-size: 35px;
     height: 40px;
     width: 350px;
     border: none;
@@ -50,8 +50,6 @@ header{
     background-position: center;
      
 }
-
-
 .contenedor{
     padding: 12px 0px;
     width: 90%;
@@ -84,10 +82,11 @@ header{
     font-family: caribbeanIsland;
     
 }
-.btnNuevoJuego, .btnRendirse, .btnReglas{
+.btn_primer-pagina, .btn_pagina-principal{
     font-size: 22px;
     margin: 10px;
     border-radius: 20px;
+    border: 1px;
     background: #5D4157;
     background: #403B4A;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #E7E9BB, #746d81);  /* Chrome 10-25, Safari 5.1-6 */
@@ -317,6 +316,9 @@ footer{
 }
 
 @media screen and (max-width:328px){
+    .btn_primer-pagina, .btn_pagina-principal{
+        font-size: 17px;
+    }
     .mensaje {
         font-size: 25px;
     }
